@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Atividade 3</title>
+</head>
+
+<body>
+    <p>3 - Receber 3 números e informar qual é o maior e o menor</p>
+    Número 1: <input id='nm1'></br>
+    Número 2: <input id='nm2'></br>
+    Número 3: <input id='nm3'></br>
+    <button onclick="atv3()">Aperte</button>
+    <script>
+        function atv3() {
+            let nm1 = document.getElementById('nm1').value
+            let nm2 = document.getElementById('nm2').value
+            let nm3 = document.getElementById('nm3').value
+            let vet = [nm1, nm2, nm3]
+            let maior = nm1
+            let menor = nm1
+
+            for (let i = 0; i < 3; i++) {
+                if (maior < vet[i]) {
+                    maior = vet[i]
+                }
+                if (menor > vet[i]) {
+                    menor = vet[i]
+                }
+            }
+
+            alert('MAIOR = ' + String(maior))
+            alert('MENOR = ' + String(menor))
+        }
+    </script>
+</body>
+
+</html>
