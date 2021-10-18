@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Atividade 4</title>
+</head>
+
+<body>
+    <p>4 - Verificar se o usuário é menor de idade</p>
+    Idade: <input id='idade' , type='number'></br>
+    <button onclick="atv4()">Aperte</button>
+    <script>
+        function atv4() {
+            let idade = document.getElementById('idade').value
+            if (idade > 17) {
+                alert('O usuário não é menor de idade')
+            } else {
+                alert('O usuário é menor de idade')
+            }
+        }
+    </script>
+</body>
+
+</html>
